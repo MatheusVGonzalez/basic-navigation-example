@@ -1,62 +1,98 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-}
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+    }
 
-nav {
-    padding: 32px 32px;
-    min-height: 80px;
-    background: #1f1f1f;
-}
+    nav {
+        padding: 32px 32px;
+        min-height: 80px;
+        background: #1f1f1f;
+    }
 
-nav > a {
-    vertical-align: bottom;
-}
+    nav > a {
+        vertical-align: bottom;
+    }
 
-nav img {
-    max-height: 48px;
-    background-color: white;
-}
+    h1{
+        text-align: center;
+    }
 
-nav ul,
-nav ul li,
-.spacer {
-    display: inline-block;
-}
+    nav img {
+        max-height: 48px;
+        background-color: white;
+    }
 
-.spacer {
-    /* Parent width - Logo width - Menu <ul> width */
-    width: calc(100% - 132px - 276px);
-}
+    nav ul,
+    nav ul li,
+    .spacer {
+        display: inline-block;
+    }
 
-nav ul {
-    margin-bottom: 15px;
-}
+    main   {
+        display: inline-block;
+        width: 70%;
+        vertical-align: top; 
+        height: 100%;
+        padding-top: 80px;   /* altura do nav  (min‑height:80px) */
+        padding-bottom: 370px; /* altura do footer (ajuste conforme) */
+    }
 
-nav ul li {
-    margin-right: 20px;
-}
+    aside { 
+        display: inline-block;
+        width: 29.6%;
+        background-color: rgb(59, 59, 59);
+        vertical-align: top;    
+        padding-top: 80px;   /* altura do nav  (min‑height:80px) */
+        padding-bottom: 420px; /* altura do footer (ajuste conforme) */
+        
+    }
 
-#last-item {
-    margin-right: 0px;
-}
+    .content-box {
+        display: inline-block;
+        width: 70%;
+        vertical-align: top;
+        margin-right: 10px;
+    }
 
-nav ul li a:link,
-nav ul li a:visited {
-    color: white;
-}
+        footer {
+            background-color: #1f1f1f;
+            color: white;
+            text-align: center;
+            padding: 3%;
+        }
 
-nav ul li a:hover {
-    color: rgb(229, 145, 0);
-}
+    .spacer {
+        width: calc(100% - 132px - 276px);
+    }
 
-nav ul li a:active {
-    color: rgb(92, 229, 0);
-}
+    nav ul {
+        margin-bottom: 15px;
+    }
 
-#current-page {
-    color: aquamarine;
-}
+    nav ul li {
+        margin-right: 20px;
+    }
+
+    #last-item {
+        margin-right: 0px;
+    }
+
+    nav ul li a:link,
+    nav ul li a:visited {
+        color: white;
+    }
+
+    nav ul li a:hover {
+        color: rgb(229, 145, 0);
+    }
+
+    nav ul li a:active {
+        color: rgb(92, 229, 0);
+    }
+
+    #current-page {
+        color: aquamarine;
+    }
