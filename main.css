@@ -27,26 +27,39 @@
 
     nav ul,
     nav ul li,
+    .line,
     .spacer {
         display: inline-block;
     }
+    ul li {
+        text-align: center; 
+    }
 
+    ul {
+        margin-bottom: 15px;
+    }
     main   {
         display: inline-block;
         width: 70%;
         vertical-align: top; 
         height: 100%;
-        padding-top: 80px;   /* altura do nav  (min‑height:80px) */
-        padding-bottom: 370px; /* altura do footer (ajuste conforme) */
+        padding-top: 80px;   
+        padding-bottom: 370px; 
     }
+    .footer-link a {
+        display: inline-block;
+        margin-right: 10px;
+        color: white;
+        text-decoration: none;
 
+    }
     aside { 
         display: inline-block;
         width: 29.6%;
         background-color: rgb(59, 59, 59);
         vertical-align: top;    
-        padding-top: 80px;   /* altura do nav  (min‑height:80px) */
-        padding-bottom: 420px; /* altura do footer (ajuste conforme) */
+        padding-top: 80px;   
+        padding-bottom: 420px;
         
     }
 
@@ -57,15 +70,23 @@
         margin-right: 10px;
     }
 
-        footer {
-            background-color: #1f1f1f;
-            color: white;
-            text-align: center;
-            padding: 3%;
-        }
+    footer {
+        background-color: #1f1f1f;
+        color: white;
+        text-align: center;
+        padding: 1%;
+    }
+
+    
 
     .spacer {
-        width: calc(100% - 132px - 276px);
+        width: calc(100% - 132px - 276px - 100px);
+    }
+
+    .line {
+        width: calc(100% - 132px - 100px);
+        background-color: white;
+        height: 1px;
     }
 
     nav ul {
@@ -74,6 +95,12 @@
 
     nav ul li {
         margin-right: 20px;
+    }
+
+    ul li {
+        height: 40px;
+        font-size: 25px;
+        color: blue;
     }
 
     #last-item {
@@ -86,13 +113,13 @@
     }
 
     nav ul li a:hover {
-        color: rgb(229, 145, 0);
+        color: white;
     }
 
     nav ul li a:active {
-        color: rgb(92, 229, 0);
+        color: lightgreen;
     }
 
     #current-page {
-        color: aquamarine;
+        color: lightblue;
     }

@@ -7,7 +7,7 @@
     <title>Basic Nav Example</title>
 </head>
 <body>
-    <nav>
+    <nav aria-label="Main Navigation">
         <a href="#">
             <picture>
                 <img src="logo.jpg" alt="Logo">
@@ -30,9 +30,19 @@
         <p style="text-align: center;">Welcome to my webpage!</p>
     </main>
 
-    <aside>
-        <h1>Categories</h1>
-    </aside>
-    <footer>this is the footer</footer>
+    <footer>
+        <div class="footer-link">   
+            <ul>
+                <a href="#">FAQ</a>
+                <a href="#">TERMS</a>
+                <a href="#">PRIVACY</a>
+                <a href="#">COOKIES</a>
+            </ul>
+        </div>
+        <span class="line"></span> 
+        <div>
+            <p>Copyright &copy; 2023</p>
+        </div>     
+    </footer>
 </body>
 </html>
